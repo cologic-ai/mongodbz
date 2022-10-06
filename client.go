@@ -10,7 +10,7 @@ import (
 	"time"
 )
 
-func New(config Conifg) (*MongoClient, error) {
+func New(config Config) (*MongoClient, error) {
 	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
 	defer cancel()
 

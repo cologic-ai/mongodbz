@@ -25,7 +25,7 @@ type WorkItem struct {
 	Callback func(any, error)
 }
 
-type Conifg struct {
+type Config struct {
 	//MongoDB URL, ignore if Client is set.
 	URL string
 	//The Name of the Database
